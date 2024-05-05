@@ -11,13 +11,13 @@ const Nav: React.FC = () => {
     <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className="flex h-[15vh] max-w-7xl items-center justify-between px-8">
+          <div className="flex h-[15vh] max-w-7xl items-center justify-between px-8 lg:px-12 xl:mx-auto">
             <div className="flex">
               <ButtonLink
                 link="#"
                 children={<img src={Kobodrop} alt="kobodrop logo" />}
               />
-              <div className="ml-4 hidden items-center  space-x-4 sm:flex">
+              <div className="ml-4 hidden items-center  space-x-4 sm:ml-6 sm:flex lg:ml-8 lg:space-x-8">
                 {constants.NAVLINKS.map(({ link, children }, index) => {
                   return (
                     <ButtonLink
@@ -44,16 +44,19 @@ const Nav: React.FC = () => {
               )}
             </Disclosure.Button>
           </div>
-          <Disclosure.Panel className="space-y-1 ">
-            <Disclosure.Button className="block" as="a" href="#features">
-              Features
-            </Disclosure.Button>
-            <Disclosure.Button className="block" as="a" href="#partners">
-              Partners
-            </Disclosure.Button>
-            <Disclosure.Button className="block" as="a" href="#reviews">
-              Reviews
-            </Disclosure.Button>
+          <Disclosure.Panel className="space-y-1 px-4 sm:hidden ">
+            {constants.NAVLINKS.map(({ children }, index) => {
+              return (
+                <Disclosure.Button
+                  key={index}
+                  className="block"
+                  as="a"
+                  href="#features"
+                >
+                  {children}
+                </Disclosure.Button>
+              );
+            })}
           </Disclosure.Panel>
         </>
       )}
