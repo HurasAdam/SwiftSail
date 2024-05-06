@@ -19,12 +19,12 @@ function Hero() {
         <img
           className="right-0 m-auto w-72 xl:absolute xl:left-6 xl:right-0 xl:mt-32 xl:w-80"
           src={Phone}
-          alt="Kobodrop app frame"
+          alt="SwiftSail app frame"
         />
         <img
           className="hidden rounded-2xl xl:flex"
           src={HeroImage}
-          alt="A woman happily using Kobodrop"
+          alt="A woman happily using SwiftSail"
         />
       </div>
     </section>

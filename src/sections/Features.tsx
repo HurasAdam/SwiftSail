@@ -34,7 +34,7 @@ function Features() {
           </div>
 
           <div className="m-auto mt-10 max-w-72 md:mx-10 md:w-1/2 lg:mx-0">
-            <img src={AppFrame} alt="Kobodrop app frame" />
+            <img src={AppFrame} alt="SwiftSail app frame" />
           </div>
         </div>
 
@@ -73,7 +73,7 @@ function Features() {
             </h2>
             <p className="m-auto text-center text-gray-500 sm:w-[34ch] md:m-0 md:text-left">
               Experience Hassle-Free Transfers, Payments, and Exchanges on
-              Kobodrop. Instant Alerts Keep You Updated Every Step of the Way.
+              SwiftSail. Instant Alerts Keep You Updated Every Step of the Way.
             </p>
           </div>
 

@@ -21,7 +21,7 @@ const Partners: React.FC = () => {
           Transact seamlessly with...
         </h2>
         <p>
-          Achieve Seamless Integration of Your Accounts with Kobodrop. Access
+          Achieve Seamless Integration of Your Accounts with SwiftSail. Access
           200+
           <br />
           Integrations with Top Payment Platforms including Stripe, PayPal,
