@@ -18,10 +18,11 @@ SwiftSail is a sample landing page for a financial application, built with React
 
 - To install and run SwiftSail locally on your computer, follow these steps:
   - Clone the repository to your local machine.
-  - Run npm install in the project's root directory to install all dependencies.
-  - After installing dependencies, run npm run dev to start the project in development mode.
-  - Open your browser and navigate to http://localhost:3000 to see the running application.
+       `git clone https://github.com/HurasAdam/SwiftSail`
+  - Install dependencies in the project's root directory.
+    `npm install`
+  - After installing dependencies, run the project in development mode.
+    `npm run dev`
+  - Open your browser and navigate to http://localhost:5173 to see the running application.
 
-## Author
 
-- SwiftSail was created by [Your Name]. If you have any questions or feedback about the project, please contact me at [Your Email Address].
