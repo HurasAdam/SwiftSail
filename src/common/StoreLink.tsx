@@ -4,8 +4,8 @@ interface IStoreLinkProps {
   link: string;
   className?: string;
   logo: string;
-  UpperText: string;
-  LowerText: string;
+  upperText: string;
+  lowerText: string;
   target: string;
 }
 
@@ -13,16 +13,16 @@ const StoreLink: React.FC<IStoreLinkProps> = ({
   link,
   logo,
   className,
-  UpperText,
-  LowerText,
+  upperText,
+  lowerText,
   target,
 }) => {
   return (
     <a href={link} className={className} target={target}>
-      <img src={logo} alt={`${LowerText} logo`} className="h-auto w-5" />
+      <img src={logo} alt={`${lowerText} logo`} className="h-auto w-5" />
       <div className="">
-        <p className="text-xs">{UpperText} </p>
-        <p>{LowerText}</p>
+        <p className="text-xs">{upperText} </p>
+        <p>{lowerText}</p>
       </div>
     </a>
   );

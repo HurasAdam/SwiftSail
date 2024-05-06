@@ -2,15 +2,12 @@ import React from "react";
 import Klarna from "../assets/logo-wall/klarna.png";
 import Stripe from "../assets/logo-wall/stripe.png";
 import Paypal from "../assets/logo-wall/paypal.png";
-
 import Bedc from "../assets/logo-wall/bedc.png";
 import MasterCard from "../assets/logo-wall/mastercard.png";
 import Mtn from "../assets/logo-wall/mtn.png";
-
 import Airtel from "../assets/logo-wall/airtel.png";
 import Payoneer from "../assets/logo-wall/payoneer.png";
 import Visa from "../assets/logo-wall/visa.png";
-
 import Mobile from "../assets/logo-wall/mobile.png";
 import Ikeja from "../assets/logo-wall/ikeja.png";
 import Dstv from "../assets/logo-wall/dstv.png";
@@ -24,11 +21,11 @@ const Partners: React.FC = () => {
           Transact seamlessly with...
         </h2>
         <p>
-          Connect your other accounts to Kobodrop seamlessly. Kobodrop supports
+          Achieve Seamless Integration of Your Accounts with Kobodrop. Access
           200+
           <br />
-          integrations with other payment platforms like stripe, paypal,
-          payoneer and others
+          Integrations with Top Payment Platforms including Stripe, PayPal,
+          Payoneer, and More.
         </p>
       </article>
       <div className="xl:flex xl:justify-center">

@@ -1,6 +1,6 @@
 import React from "react";
 import { Disclosure } from "@headlessui/react";
-import Kobodrop from "../assets/logos/kobodrop_logo.svg";
+import SwiftSailLogo from "../assets/logos/headerLogo.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import ButtonLink from "../common/ButtonLink";
@@ -15,7 +15,14 @@ const Nav: React.FC = () => {
             <div className="flex">
               <ButtonLink
                 link="#"
-                children={<img src={Kobodrop} alt="kobodrop logo" />}
+                children={
+                  <div className="items mr-1 flex items-center">
+                    <img className="h-auto w-10" src={SwiftSailLogo} />
+                    <h1 className="text-2xl font-semibold text-gray-700 ">
+                      SwiftSail
+                    </h1>
+                  </div>
+                }
               />
               <div className="ml-4 hidden items-center  space-x-4 sm:ml-6 sm:flex lg:ml-8 lg:space-x-8">
                 {constants.NAVLINKS.map(({ link, children }, index) => {
@@ -34,7 +41,7 @@ const Nav: React.FC = () => {
               link="https://play.google.com"
               target="_blank"
               className="active:bg-gra-600 hidden rounded-xl bg-gray-800 px-5 py-3 text-white hover:bg-gray-900 sm:flex"
-              children="Install Kobodrop"
+              children="Install SwiftSail"
             />
             <Disclosure.Button className=" rounded-md p-2 text-gray-500 hover:bg-gray-700 hover:text-white sm:hidden">
               {open ? (
@@ -45,13 +52,13 @@ const Nav: React.FC = () => {
             </Disclosure.Button>
           </div>
           <Disclosure.Panel className="space-y-1 px-4 sm:hidden ">
-            {constants.NAVLINKS.map(({ children }, index) => {
+            {constants.NAVLINKS.map(({ children, link }, index) => {
               return (
                 <Disclosure.Button
                   key={index}
                   className="block"
                   as="a"
-                  href="#features"
+                  href={link}
                 >
                   {children}
                 </Disclosure.Button>

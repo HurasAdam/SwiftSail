@@ -67,10 +67,15 @@ const Carousel: React.FC<ICarouselProps> = ({ slides }) => {
           );
         })}
       </div>
-      <button onClick={previousSlideHandler} disabled={current === 0}>
+      <button
+        onClick={previousSlideHandler}
+        disabled={current === 0}
+        className="disabled:opacity-50"
+      >
         <IoIosArrowBack className="absolute bottom-5 right-16 h-7 w-7 rounded-full border p-1 text-white hover:cursor-pointer" />
       </button>
       <button
+        className="disabled:opacity-50"
         onClick={NextSlideHandler}
         disabled={current === slides.length - 1}
       >
