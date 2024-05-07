@@ -25,4 +25,5 @@ SwiftSail is a sample landing page for a financial application, built with React
     `npm run dev`
   - Open your browser and navigate to http://localhost:5173 to see the running application.
 
-
+## Live 📍
+https://deployed-swiftsail.netlify.app
